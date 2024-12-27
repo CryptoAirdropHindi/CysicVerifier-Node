@@ -11,18 +11,18 @@ make sure your device meets these minimal specifications
 - Bandwidth: 100 KB/s upload/download
 - - Supported Operating Systems: Windows, Linux, Mac
 
-#Step 1: First of all your system update
+# Step 1: First of all your system update
  ```bash
 sudo apt-get update -y && sudo apt upgrade -y && sudo apt-get install make screen build-essential unzip lz4 gcc git jq -y
 ```
-#Step 2: 
+# Step 2: 
 Use the following command in the terminal to download and run the setup script
 (copy and paste the following command in Powershell and press enter to run them).
 `Please replace 0x-Fill-in-your-reward-address-here with your own reward address below.`
 ```bash
 curl  -L https://github.com/cysic-labs/phase2_libs/releases/download/v1.0.0/setup_linux.sh > ~/setup_linux.sh &&  bash ~/setup_linux.sh < EVM-WALLET >
 ```
-#Step 3: 
+# Step 3: 
 Step 2: After the completion of Step 2, 
 use the following command in terminal to start the verifier program:
 ```bash
@@ -33,7 +33,7 @@ cd ~/cysic-verifier/ &&  bash start.sh
 The command you provided creates and configures a systemd service unit (cysic.service) 
 on a Linux system. Here's a breakdown of what each part does and how you can use it:
 
-#Step 4: 
+# Step 4: 
 Simply copy then submit to your server.
 ```bash
 sudo tee /etc/systemd/system/cysic.service > /dev/null <<EOF
@@ -53,25 +53,25 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-#Step 5: 
+# Step 5: 
 Simply copy then submit to your server.
 ```bash
 sudo systemctl enable cysic
 sudo systemctl daemon-reload
 sudo systemctl start cysic
 ```
-#Step 6:
+# Step 6:
 Here's the command to view the logs for the
 ```bash
 sudo journalctl -u cysic -f --no-hostname -o cat
 ```
-#Step 7:
+# Step 7:
 if closed Powershell & putty and return to vps login again and reun below commands to check sync status 
 `change directory`
 ```bash
 cd ~/cysic-verifier
 ```
-#Step 8:
+# Step 8:
 view the logs
 ```bash
 sudo journalctl -u cysic -f --no-hostname -o cat
