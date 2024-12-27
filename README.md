@@ -77,6 +77,7 @@ view the logs
 sudo journalctl -u cysic -f --no-hostname -o cat
 ```
 ❤️Thank You for Reading!
+
 I hope you have completed running the node,
 if you have any problem with the node run,
 then you can join my telegram channel below
