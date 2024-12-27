@@ -9,7 +9,7 @@ make sure your device meets these minimal specifications
 - Memory: 8 GB
 - Disk: 512 MB
 - Bandwidth: 100 KB/s upload/download
-- - Supported Operating Systems: Windows, Linux, Mac
+- Supported Operating Systems: Windows, Linux, Mac
 
 # Step 1: First of all your system update
  ```bash
